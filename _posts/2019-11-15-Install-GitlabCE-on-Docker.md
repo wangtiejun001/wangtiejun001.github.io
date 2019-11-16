@@ -69,6 +69,7 @@ sudo docker run --detach \
     Add ssh key on webpage after logging in.
 
 - Check SSH key on client machine terminal
+
 ```bash
 # Success if receive:
 # Welcome to GitLab, @username! message
@@ -76,6 +77,7 @@ ssh -T git@<your-git-domain.com>
 ```
 
 - change port for ssh pushing
+
 ```bash
 sudo docker exec -it gitlab /bin/bash
 
