@@ -10,6 +10,7 @@
 [Official Doc to install Docker](https://docs.docker.com/install/linux/docker-ce/debian/)
 
 For Debian Stretch:
+
 ```bash
 sudo apt-get update
 
@@ -43,14 +44,17 @@ sudo docker run hello-world
 
 
 ## Install Gitlab CE
+
 [Official GitLab Docker Install](https://docs.gitlab.com/omnibus/docker/)
 
 
 #### Install with docker run
+
 > --publish 8543:443 --publish 8780:80 --publish 8722:22 \
 > use 8543 instead of 443: 443 is used by https on host machine \
 > use 8780 instead of 80: 80 is used by nginx on host machine \
 > use 8722 instead of 22: 22 is used by ssh on host machine
+
 ```bash
 sudo docker run --detach \
   --hostname gitlab.dev.xjianke.com \
@@ -64,6 +68,7 @@ sudo docker run --detach \
 ```
 
 #### config ssh keys
+
 - Add SSH key
 
     Add ssh key on webpage after logging in.
