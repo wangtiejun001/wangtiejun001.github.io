@@ -50,10 +50,8 @@ sudo docker run hello-world
 
 #### Install with docker run
 
-> --publish 8543:443 --publish 8780:80 --publish 8722:22 \
-> use 8543 instead of 443: 443 is used by https on host machine \
-> use 8780 instead of 80: 80 is used by nginx on host machine \
-> use 8722 instead of 22: 22 is used by ssh on host machine
+> --publish 8543:443 --publish 8780:80 --publish 8722:22
+> port: 443, 80, 22 is used by host machine
 
 ```bash
 sudo docker run --detach \
