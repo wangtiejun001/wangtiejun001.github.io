@@ -10,6 +10,7 @@
 [Official Doc to install Docker](https://docs.docker.com/install/linux/docker-ce/debian/)
 
 For Debian Stretch:
+
 ```bash
 sudo apt-get update
 
@@ -52,6 +53,7 @@ sudo docker run hello-world
 > --publish 8543:443 --publish 8780:80 --publish 8722:22
 
 > port: 443, 80, 22 is used by host machine
+
 ```bash
 sudo docker run --detach \
   --hostname gitlab.dev.xjianke.com \
@@ -69,6 +71,7 @@ sudo docker run --detach \
     Add ssh key on webpage after logging in.
 
 - Check SSH key on client machine terminal
+
 ```bash
 # Success if receive:
 # Welcome to GitLab, @username! message
@@ -76,6 +79,7 @@ ssh -T git@<your-git-domain.com>
 ```
 
 - change port for ssh pushing
+
 ```bash
 sudo docker exec -it gitlab /bin/bash
 
